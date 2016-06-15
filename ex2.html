@@ -1,0 +1,236 @@
+<!DOCTYPE HTML>
+<html>
+
+<head>
+  <title>CSI477 - WEB</title>
+  <meta name="description" content="website description" />
+  <meta name="keywords" content="website keywords, website keywords" />
+  <meta http-equiv="content-type" content="text/html; charset=UTF-8" />
+  <link rel="stylesheet" type="text/css" href="css/style.css" />
+  <!-- modernizr enables HTML5 elements and feature detects -->
+  <script type="text/javascript" src="js/modernizr-1.5.min.js"></script>
+</head>
+
+<body>
+  <div id="main">
+    <header>
+      <div id="logo">
+        <div id="logo_text">
+          <!-- class="logo_colour", allows you to change the colour of the text -->
+          <h1><a href="didatica.html">Projeto<span class="logo_colour"></span></a></h1>
+          <h2>Atividades de matemática para crianças</h2>
+        </div>
+      </div>
+      <nav>
+        <div id="menu_container">
+          <ul class="sf-menu" id="nav">
+            <li><a href="didatica.html">Início</a></li>
+            <li><a href="exercicios.html">Exercícios</a></li>
+            <li><a href="page.html">O projeto</a></li>
+
+
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <div id="site_content">
+      <div class="content">
+        <h2>Associe as figuras</h2>
+        <p>Relacione o nome com a figura geométrica, digitando o nome da figura no quadrado</p>
+        <p>Triângulo  Quadrado  Círculo  Retângulo</p>
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css" />
+        <table class="table table-responsive">
+             <thead>
+                 <tr>
+                     <th>Escreve o nome da figura ao lado</th>
+                     <th> </th>
+                 </tr>
+             </thead>
+             <tbody>
+             <form>
+                 <tr>
+                     <td>
+                         <div class="radio">
+                               <input class="checkbox" type="text" id="c1" onkeyup="maiuscula(this)"/>
+                         </div>
+                     </td>
+                     <td>
+                     <div class="radiotext">
+                         <label for='regular'><img src="images/quad.jpg" alt="example graphic" /></label>
+                     </div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <div class="radio">
+                             <input class="checkbox" type="text" id="c2" onkeyup="maiuscula(this)" />
+
+                         </div>
+                     </td>
+                     <td>
+                     <div class="radiotext">
+                         <label for='regular'><img src="images/circ.jpg" alt="example graphic" /></label>
+                     </div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <div class="radio">
+                            <input class="checkbox" type="text" id="c3" onkeyup="maiuscula(this)"/>
+                         </div>
+                     </td>
+                     <td>
+                     <div class="radiotext">
+                         <label for='regular'><img src="images/ret.jpg" alt="example graphic" /></label>
+
+                     </div>
+                     </td>
+                 </tr>
+                 <tr>
+                     <td>
+                         <div class="radio">
+                             <input class="checkbox" type="text" id="c4" onkeyup="maiuscula(this)"/>
+                         </div>
+                     </td>
+                     <td>
+                     <div class="radiotext">
+                         <label for='regular'><img src="images/tri.jpg" alt="example graphic" /></label>
+                     </div>
+                     </td>
+                 </tr>
+                 </form>
+                 </tbody>
+
+        </table>
+
+  <p><p>
+    <div class="form_settings">
+      <p style="padding-top:left"><span>&nbsp;</span><input type="button" onclick="ver()" value="Conferir" />
+
+    </div>
+      </div>
+    </div>
+    <div id="scroll">
+      <a title="Scroll to the top" class="top" href="#"><img src="images/top.png" alt="top" /></a>
+    </div>
+    <footer>
+      <p><a href="didatica.html">Home</a> | <a href="exercicios.html">Exercícios</a> | <a href="page.html">O Projeto</a></p>
+      <p>Copyright &copy; CSS3_trees | <a href="http://www.heartinternet.co.uk/web-hosting/">Web hosting</a> | <a href="http://www.css3templates.co.uk">design from css3templates.co.uk</a></p>
+    </footer>
+  </div>
+
+  <script>
+
+  function maiuscula(z){
+        v = z.value.toUpperCase();
+        z.value = v;
+    }
+
+  function ver(){
+    var c1 = document.getElementById('c1').value;
+    var c2 = document.getElementById('c2').value;
+    var c3 = document.getElementById('c3').value;
+    var c4 = document.getElementById('c4').value;
+    if (c1=='QUADRADO')
+     alert("ACERTOU QUADRADO")
+    else{
+      alert("ERROU, ESTE NÃO É UM "+document.getElementById('c1').value)
+    }
+    if (c2=='CIRCULO')
+     alert("ACERTOU CIRCULO")
+     else{
+       alert("ERROU, ESTE NÃO É UM "+document.getElementById('c2').value)
+     }
+    if (c3=='RETANGULO')
+     alert("ACERTOU RETANGULO")
+     else{
+       alert("ERROU, ESTE NÃO É UM "+document.getElementById('c3').value)
+     }
+    if (c4=='TRIANGULO')
+     alert("ACERTOU TRIANGULO")
+     else{
+       alert("ERROU, ESTE NÃO É UM "+document.getElementById('c4').value)
+     }
+  }
+
+  function myFunction()
+  {
+      for(k=1; k<=16; k++)
+          checkVal(document.getElementsByName("radio"+k))
+
+  }
+
+  function checkVal(selector){
+  for (var i = 0; i < selector.length; i++) {
+          if (selector[i].checked) {
+              switch (selector[i].value){
+                  case '1' :
+                      alert("ERROU, GRUPO 1")
+                      break;
+                  case '2' :
+                      alert("ACERTOU, GRUPO 1")
+                      break;
+                  case '3' :
+                      alert("ERROU, GRUPO 1")
+                      break;
+                  case '4' :
+                      alert("ERROU, GRUPO 1")
+                      break;
+                  case '5' :
+                      alert("ERROU, GRUPO 2")
+                      break;
+                  case '6' :
+                      alert("ERROU, GRUPO 2")
+                      break;
+                  case '7' :
+                      alert("ERROU, GRUPO 2")
+                      break;
+                  case '8' :
+                      alert("ACERTOU, GRUPO 2")
+                      break;
+                  case '9' :
+                      alert("ERROU, GRUPO 3")
+                      break;
+                  case '10' :
+                      alert("ERROU, GRUPO 3")
+                      break;
+                  case '11' :
+                      alert("ACERTOU, GRUPO 3")
+                      break;
+                  case '12' :
+                      alert("ERROU, GRUPO 3")
+                      break;
+                  case '13' :
+                      alert("ACERTOU, GRUPO 4")
+                      break;
+                  case '14' :
+                      alert("ERROU, GRUPO 4")
+                      break;
+                  case '15' :
+                      alert("ERROU, GRUPO 4")
+                      break;
+                  case '16' :
+                      alert("ERROU, GRUPO 4")
+                      break;
+
+                  }
+
+              break;
+
+          }
+      }
+  }
+  </script>
+  <!-- javascript at the bottom for fast page loading -->
+  <script type="text/javascript" src="js/jquery.js"></script>
+  <script type="text/javascript" src="js/jquery.easing-sooper.js"></script>
+  <script type="text/javascript" src="js/jquery.sooperfish.js"></script>
+  <script type="text/javascript">
+    $(document).ready(function() {
+      $('ul.sf-menu').sooperfish();
+      $('.top').click(function() {$('html, body').animate({scrollTop:0}, 'fast'); return false;});
+    });
+  </script>
+</body>
+</html>
