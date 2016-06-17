@@ -145,7 +145,7 @@ ol li {
 
 
 header { 
-  background: #444 url(../images/logo1.jpg) no-repeat;
+  background: #444 url(../images/ter.jpg) no-repeat;
   height: 220px;
 }
 
@@ -305,7 +305,7 @@ footer a:hover {
 }
 
 .form_settings { 
-  margin: 15px 0 0 0;
+  margin: 5px 0 0 0;
 }
 
 .form_settings p { 
@@ -314,7 +314,7 @@ footer a:hover {
 
 .form_settings span { 
   float: left; 
-  width: 200px; 
+  width: 20px; 
   text-align: left;
 }
   
@@ -333,7 +333,7 @@ footer a:hover {
 .form_settings .submit { 
   font: 100% 'Droid Sans', arial; 
   border: 0; 
-  width: 99px; 
+  width: 9px; 
   margin: 0 0 0 212px; 
   height: 33px;
   padding: 2px 0 3px 0;
@@ -347,7 +347,7 @@ footer a:hover {
 
 .form_settings textarea, .form_settings select { 
   font: 100% 'Droid Sans', arial; 
-  width: 299px;
+  width: 29px;
 }
 
 .form_settings select { 
@@ -355,7 +355,7 @@ footer a:hover {
 }
 
 .form_settings .checkbox { 
-  margin: 4px 0; 
+  margin: 14px 0; 
   padding: 0; 
   width: 14px;
   border: 0;
